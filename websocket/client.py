@@ -6,6 +6,7 @@ import websockets
 host = 'localhost'
 port = '1234'
 
+
 async def echo():
     uri = "ws://" + host + ':' + port + "/echo"
     async with websockets.connect(uri) as websocket:
